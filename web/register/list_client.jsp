@@ -33,6 +33,7 @@
                     <th>E-Mail</th>
                     <th>Telefone</th>
                     <th>Endereço</th>
+                    <th><div><a href="add_client.jsp">Adicionar Cliente</a></div></th>
                     </thead>
                     <tbody>
                         <tr>
