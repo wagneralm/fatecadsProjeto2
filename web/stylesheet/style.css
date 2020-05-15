@@ -1,0 +1,212 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/05/2020, 21:02:40
+    Author     : wagne
+*/
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #000;
+}
+a {
+    text-decoration: none
+}
+header {
+    background: #0C1821;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    width: 1320px;
+}
+
+header div h1 {
+    font-family: Helvetica;
+    width: 300px;
+    color: #ccc9dc;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+header nav ul, li {
+    display: inline;
+}
+
+header nav ul li {
+    margin: 0 8px;
+}
+
+header nav ul li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #ccc9dc;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #324a5f;
+}
+
+/* Main */
+
+.home {
+    background: #000;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    min-height: 80vh;
+    background: #000;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    /* align-items: center;*/
+    justify-content: center;
+}
+
+main .container-wave {
+
+}
+
+main .container-wave .circle {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+main .container-wave .circle .wave {
+    background: #CCC9DC;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+}
+
+.wave:before,
+.wave:after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background-color: #fff;
+}
+
+.wave:before {
+    border-radius: 45%;
+    background: rgba(255,255,255,1);
+    animation: animate 5s linear infinite;
+}
+
+.wave:after {
+    border-radius: 40%;
+    background: rgba(255,255,255,.5);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg); 
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+/* Tabelas */
+
+main .container-table {
+    width: 1100px;
+    padding: .5em 1em;
+}
+
+main .container-table h2 {
+    text-align: center;    
+    color: #ccc9dc;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 1em auto;
+}
+
+main table {
+    width: 100%;
+    color: #ccc9dc;
+}
+
+main table th {
+    font-weight: 700;
+}
+
+main table td {
+    vertical-align: middle;
+}
+
+main table th, td {
+    padding: .4em .5em;
+    text-align: center;
+    border: 1px solid #ccc9dc;
+}
+
+main table tbody tr td:last-child {
+    border: none;
+    vertical-align: middle;
+    width: 160px;
+}
+
+main table tbody div {
+    cursor: pointer;
+    display: inline-block;
+    background: #ccc9dc;
+    color: #0c1821;
+    font-weight: 530;
+    width: 60px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    margin: 0 4px;
+    padding: 2px 5px;
+    border-radius: 7px;
+}
+
+main table tbody tr:hover {
+    background: rgba(204,201,220, 0.5);
+}
+
+/* Footer */
+
+footer {
+    background: #0C1821;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    font-family: Helvetica;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #ccc9dc;
+}
