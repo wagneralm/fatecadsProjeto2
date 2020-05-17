@@ -18,12 +18,12 @@ public class Provider {
     private String address;
     
     public void setProviderAttributes(String name, String companyName, String cnpj, String email, String telephone, String address){
-        this.name = name;
-        this.companyName = companyName;
-        this.cnpj = cnpj;
-        this.email = email;
-        this.telephone = telephone;
-        this.address = address;
+        this.setName(name); 
+        this.setCompanyName(companyName);
+        this.setCnpj(cnpj); 
+        this.setEmail(email); 
+        this.setTelephone(telephone); 
+        this.setAddress(address); 
     }
 
     public String getName() {

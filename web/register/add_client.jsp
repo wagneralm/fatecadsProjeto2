@@ -4,12 +4,29 @@
     Author     : wagne
 --%>
 
+<%@page import="br.gov.sp.fatec.register.Db"%>
+<%@page import="br.gov.sp.fatec.register.Client"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+<%
+    if (request.getParameter("add") != null) {
+        String name = request.getParameter("name");
+        String cpf = request.getParameter("cpf");
+        String rg = request.getParameter("rg");
+        String email = request.getParameter("email");
+        String telephone = request.getParameter("tel");
+        String address = request.getParameter("address");
+        Client client = new Client();
+        client.setClientAttributes(name, cpf, rg, email, telephone, address);
+        Db.getClients().add(client);
+        response.sendRedirect("list_client.jsp");
+    }
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Cadastrar Cliente</title>
 
 
         <!--Style Sheet-->
@@ -29,45 +46,45 @@
                     <div class="container-input">
                         <input class="input-padrao" type="text" name="name" id="name" required/>
                         <label for="name">
-                            <span>Nome</span>
+                            <span>Nome:</span>
                         </label>
                     </div>
 
                     <div class="container-input">
                         <input class="input-padrao" type="number" name="cpf" id="cpf" required>
                         <label for="cpf">
-                            <span>CPF</span>
+                            <span>CPF:</span>
                         </label>
                     </div>
 
                     <div class="container-input">
                         <input class="input-padrao" type="number" name="rg" id="rg" required>
                         <label for="rg">
-                            <span>RG</span>
+                            <span>RG:</span>
                         </label>
                     </div>
 
                     <div class="container-input">
                         <input class="input-padrao" type="email" name="email" id="email" required>
                         <label for="email">
-                            <span>E-mail</span>
+                            <span>E-mail:</span>
                         </label>
                     </div>
 
                     <div class="container-input">
                         <input class="input-padrao" type="tel" name="tel" id="tel" required>
                         <label for="tel">
-                            <span>Telefone</span>
+                            <span>Telefone:</span>
                         </label>
                     </div>
 
                     <div class="container-input">
                         <input class="input-padrao" type="text" name="address" id="address" required>
                         <label for="address">
-                            <span>Endereço</span>
+                            <span>Endereço:</span>
                         </label>
                     </div>
-                    <input class="btn-padrao" type="submit" value="Cadastrar">
+                    <input class="btn-padrao" type="submit" name="add" value="Cadastrar">
                 </form>
             </section>
         </main>

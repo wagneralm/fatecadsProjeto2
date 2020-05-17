@@ -4,6 +4,8 @@
     Author     : wagne
 --%>
 
+<%@page import="br.gov.sp.fatec.register.Provider"%>
+<%@page import="br.gov.sp.fatec.register.Db"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -35,18 +37,20 @@
                     <th><div><a href="add_provider.jsp">Adicionar Fornecedor</a></div></th>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Wagner de Almeida</td>
-                            <td>12345678910</td>
-                            <td>12345678</td>
-                            <td>wagneer.alm@gmail.com</td>
-                            <td>13988448997</td>
-                            <td>rua doideira - praia grande - sp</td>
+                        <%for (Provider provider : Db.getProviders()) {%>
+                            <tr>
+                            <td><%= provider.getName()%></td>
+                            <td><%= provider.getCompanyName()%></td>
+                            <td><%= provider.getCnpj()%></td>
+                            <td><%= provider.getEmail()%></td>
+                            <td><%= provider.getTelephone()%></td>
+                            <td><%= provider.getAddress()%></td>
                             <td>
                                 <div><a href="set_provider.jsp">Alterar</a></div>
                                 <div><a href="remove_provider.jsp">Remover</a></div>
                             </td>
                         </tr>
+                        <%}%>
                     </tbody>
                 </table>
             </section>

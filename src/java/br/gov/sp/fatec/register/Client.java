@@ -19,12 +19,12 @@ public class Client {
     private String address;
 
     public void setClientAttributes(String name, String cpf, String rg, String email, String telephone, String address){
-        this.name = name;
-        this.cpf = cpf;
-        this.rg = rg;
-        this.email = email;
-        this.telephone = telephone;
-        this.address = address;
+        this.setName(name);
+        this.setCpf(cpf);
+        this.setRg(rg);
+        this.setEmail(email);
+        this.setTelephone(telephone);
+        this.setAddress(address);
     }
     
     public String getName() {

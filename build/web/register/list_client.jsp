@@ -4,6 +4,8 @@
     Author     : wagne
 --%>
 
+<%@page import="br.gov.sp.fatec.register.Client"%>
+<%@page import="br.gov.sp.fatec.register.Db"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -36,18 +38,23 @@
                     <th><div><a href="add_client.jsp">Adicionar Cliente</a></div></th>
                     </thead>
                     <tbody>
+
+                        <%for (Client client : Db.getClients()) {%>
                         <tr>
-                            <td>Wagner de Almeida</td>
-                            <td>12345678910</td>
-                            <td>12345678</td>
-                            <td>wagneer.alm@gmail.com</td>
-                            <td>13988448997</td>
-                            <td>rua doideira - praia grande - sp</td>
+                            <td><%= client.getName()%></td>
+                            <td><%= client.getCpf()%></td>
+                            <td><%= client.getRg()%></td>
+                            <td><%= client.getEmail()%></td>
+                            <td><%= client.getTelephone()%></td>
+                            <td><%= client.getAddress()%></td>
                             <td>
-                                <div><a href="set_client.jsp">Alterar</a></div>
-                                <div><a href="remove_client.jsp">Remover</a></div>
+                                <%int index = Db.getClients().indexOf(client);%>
+                                <div><a href="set_client.jsp?index=<%=index%>">Alterar</a></div>
+                                <div><a href="remove_client.jsp?index=<%=index%>">Remover</a></div>
                             </td>
                         </tr>
+                        <%}%>
+
                     </tbody>
                 </table>
             </section>
