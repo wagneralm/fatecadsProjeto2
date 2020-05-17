@@ -260,7 +260,7 @@ main .section-form form .input-padrao {
     outline: none;
     transition: all 1s;
     border-bottom:1px solid paleturquoise;
-    padding-left: 80px;
+    padding-left: 100px;
 } 
 
 main .section-form .container-input label {

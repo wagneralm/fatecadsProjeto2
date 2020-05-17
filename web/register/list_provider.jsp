@@ -46,8 +46,9 @@
                             <td><%= provider.getTelephone()%></td>
                             <td><%= provider.getAddress()%></td>
                             <td>
-                                <div><a href="set_provider.jsp">Alterar</a></div>
-                                <div><a href="remove_provider.jsp">Remover</a></div>
+                                <% int index = Db.getProviders().indexOf(provider);%>
+                                <div><a href="set_provider.jsp?index=<%=index%>">Alterar</a></div>
+                                <div><a href="remove_provider.jsp?index=<%=index%>">Remover</a></div>
                             </td>
                         </tr>
                         <%}%>

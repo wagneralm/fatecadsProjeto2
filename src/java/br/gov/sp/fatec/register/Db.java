@@ -20,7 +20,7 @@ public class Db {
         if (client == null) {
             client = new ArrayList<>();
             Client first = new Client();
-            first.setClientAttributes("Primeiro", "132456", "789456", "primeiro@gmail.com", "123456789", "doidera");
+            first.setClientAttributes("Teste Cliente", "132456", "789456", "email@gmail.com", "123456789", "rua Qualquer,nº132 Alguma cidade - Estado");
             client.add(first);
         }
         return client;
@@ -30,7 +30,7 @@ public class Db {
         if (provider == null) {
             provider = new ArrayList<>();
             Provider first = new Provider();
-            first.setProviderAttributes("SEgundo", "companyName", "cnpj", "email", "telephone", "address");
+            first.setProviderAttributes("Teste Fornecedor", "R.C.F", "1234563", "email@email.com", "13465846", "rua Qualquer,nº132 Alguma cidade - Estado");
             provider.add(first);
         }
         return provider;
