@@ -3,9 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/register/add_client.jsp</file>
             <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/WEB-INF/footer.jspf</file>
+            <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/register/add_provider.jsp</file>
+            <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/stylesheet/style.css</file>
+            <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/register/list_client.jsp</file>
+            <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/register/remove_client.jsp</file>
+            <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/register/set_provider.jsp</file>
             <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/WEB-INF/header.jspf</file>
+            <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/src/java/br/gov/sp/fatec/register/Provider.java</file>
             <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/index.jsp</file>
+            <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/register/set_client.jsp</file>
+            <file>file:/C:/Users/wagne/Documents/NetBeansProjects/Aula09/web/register/remove_provider.jsp</file>
         </group>
     </open-files>
 </project-private>

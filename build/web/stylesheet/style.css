@@ -80,10 +80,6 @@ main {
     justify-content: center;
 }
 
-main .container-wave {
-
-}
-
 main .container-wave .circle {
     background: #fff;
     display: flex;
@@ -157,6 +153,10 @@ main table {
     color: #ccc9dc;
 }
 
+main table a:visited {
+    color: #0C1821
+}
+
 main table th {
     font-weight: 700;
 }
@@ -219,6 +219,89 @@ main table tbody div:hover {
 
 main table tbody tr:hover {
     background: rgba(204,201,220, 0.5);
+}
+
+/*Formulários de Clentes e Fornecedores*/
+
+main .section-form {
+    display: flex;
+    width: 500px;
+    overflow: hidden;
+    align-items: center;
+    justify-self: center;
+}
+
+main .section-form form h2{
+    color: #ccc9dc;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+main .section-form form {
+    width: 100%;
+    color: #ccc9dc;
+}
+
+main .section-form form, .container-input {
+    display: flex;
+    flex-direction: column;
+}
+
+main .section-form .container-input {
+    margin: 0 0 2.5em;
+}
+
+main .section-form form .input-padrao {
+    background: #000;
+    color: #ccc9dc;
+    border: none;
+    outline: none;
+    transition: all 1s;
+    border-bottom:1px solid paleturquoise;
+    padding-left: 64px;
+} 
+
+main .section-form .container-input label {
+    position: absolute;
+    cursor: text;
+    transition: all .4s;
+}
+
+main .section-form form .input-padrao:focus + label,
+main .section-form form .input-padrao:valid + label {
+    transform: translateY(-150%);
+    color: #324a5f;
+    font-size: .9em;
+}
+
+main .section-form form .input-padrao:focus,
+main .section-form form .input-padrao:valid {
+    border-bottom: 1px solid #324a5f;
+}
+
+main .section-form form .btn-padrao {
+    color: #324a5f;
+    background: #CCC9DC;
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all .5s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main .section-form form .btn-padrao:hover {
+    transform: scale(1.1);
+    color:  #CCC9DC;
+    background: #324a5f;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 /* Footer */

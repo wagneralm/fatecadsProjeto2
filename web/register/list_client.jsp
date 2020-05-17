@@ -45,7 +45,7 @@
                             <td>rua doideira - praia grande - sp</td>
                             <td>
                                 <div><a href="set_client.jsp">Alterar</a></div>
-                                <div><a href="list_provider.jsp">Remover</a></div>
+                                <div><a href="remove_client.jsp">Remover</a></div>
                             </td>
                         </tr>
                     </tbody>
