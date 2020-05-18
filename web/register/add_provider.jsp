@@ -1,7 +1,7 @@
 <%-- 
-    Document   : add
-    Created on : 11/05/2020, 21:00:04
-    Author     : wagne
+    Document   : add_provider
+    Created on : 18/05/2020, 07:50:50
+    Author     : Administrador
 --%>
 
 <%@page import="br.gov.sp.fatec.register.Db"%>
@@ -25,7 +25,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Adicionar Fornecedor</title>
+        <title>Cadastro de Fornecedor</title>
 
 
         <!--Style Sheet-->

@@ -1,7 +1,7 @@
 <%-- 
-    Document   : add
-    Created on : 11/05/2020, 21:00:04
-    Author     : wagne
+    Document   : add_client
+    Created on : 18/05/2020, 07:49:56
+    Author     : Administrador
 --%>
 
 <%@page import="br.gov.sp.fatec.register.Db"%>
@@ -26,7 +26,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cadastrar Cliente</title>
+        <title>Cadastro de Cliente</title>
 
 
         <!--Style Sheet-->

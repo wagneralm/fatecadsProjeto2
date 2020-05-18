@@ -1,7 +1,7 @@
 <%-- 
-    Document   : list
-    Created on : 11/05/2020, 20:59:52
-    Author     : wagne
+    Document   : list_client
+    Created on : 18/05/2020, 07:57:30
+    Author     : Administrador
 --%>
 
 <%@page import="br.gov.sp.fatec.register.Client"%>
@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Lista Cliente</title>
+        <title>JSP Page</title>
 
 
         <!--Style Sheet-->
@@ -26,7 +26,7 @@
 
         <main>
             <section class="container-table">
-                <h2>Clientes</h2>
+                <h2>Lista de Clientes</h2>
                 <table>
                     <thead>
                     <th>Nome</th>

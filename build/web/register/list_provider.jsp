@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Lista Fornecedor</title>
+        <title>JSP Page</title>
 
 
         <!--Style Sheet-->
